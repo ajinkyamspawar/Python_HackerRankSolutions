@@ -1,0 +1,18 @@
+Q1: Hackerearth Solution to find out minimum number from an array/.
+
+def FindIt (arr):
+    # Write your code here
+
+    min = arr[0] #Any value at position 0 will be assigned as min.
+
+    for i in arr:   #Will iterate for loop through arr to finout minimum value
+        if i < min: #Here will check if the element is less than min or not
+            min = i #if it is less than min then we will assign it to min 
+    pass
+    return min #after all the iteration will return the element which is the minimum element
+    
+n = int(input())
+arr = list(map(int, input().split()))
+ 
+out_ = FindIt(arr)
+print (out_)
