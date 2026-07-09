@@ -1,0 +1,17 @@
+import calendar
+
+# from calendar import calendar.weekday(year, month, day)
+
+# Days list
+days = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
+
+month, day, year = map(int, input().split())
+
+# Getting the input number
+day_num = calendar.weekday(year, month, day)
+
+
+# Printing the output using indexing of list 
+print(days[day_num])
+
+
