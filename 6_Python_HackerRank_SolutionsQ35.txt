@@ -1,0 +1,18 @@
+## Errors and Exceptions
+
+
+
+#Getting inputs 
+
+## Getting the defined range i.e it reads the number of test cases
+test_cases = int(input())
+
+## count of the output depends on the given number of test cases hence for loop is required 
+for i in range(test_cases):
+    a, b = input().split()
+    try:
+        print(int(a)//int(b))
+    except(ZeroDivisionError, ValueError) as e:
+        print("Error Code:", e)
+        
+    
